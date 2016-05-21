@@ -2,7 +2,7 @@
 var express = require('express');
 var favicon = require('serve-favicon');
 var bodyParser = require('body-parser');
-//var private = require('./private.js');
+var private = require('./private.js');
 
 
 // RUN EXPRESS
