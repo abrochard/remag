@@ -47,3 +47,4 @@ Temporary Items
 .apdisk
 *.js~
 private.js
+node_modules/igdb-api-node/config.json
