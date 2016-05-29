@@ -48,3 +48,4 @@ Temporary Items
 *.js~
 private.js
 node_modules/igdb-api-node/config.json
+*.md~
