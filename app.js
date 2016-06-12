@@ -26,3 +26,34 @@ req.end();
 // LISTEN TO PORT
 app.listen(3000);
 
+
+// var nodemailer = require('nodemailer');
+// var smtpTransport = require('nodemailer-smtp-transport');
+// // create reusable transporter object using the default SMTP transport
+// //var transporter = nodemailer.createTransport(smtpTransport('smtps://remag%40gmx.fr:' + keys.emailPasswd() + '@mail.gmx.com'));
+// var transporter = nodemailer.createTransport(smtpTransport({
+//     host: 'mail.gmx.com',
+//     port: 587,
+//     secure: true,
+//     auth: {
+//         user: 'remag@gmx.fr',
+//         pass: keys.emailPasswd()
+//     }
+// }));
+
+// // setup e-mail data with unicode symbols
+// var mailOptions = {
+//     from: '"Fred Foo" <foo@blurdybloop.com>', // sender address
+//     to: 'aaa.brochard@gmail.com', // list of receivers
+//     subject: 'Hello ', // Subject line
+//     text: 'Hello world ', // plaintext body
+//     html: '<b>Hello world </b>' // html body
+// };
+
+// // send mail with defined transport object
+// transporter.sendMail(mailOptions, function(error, info){
+//     if(error){
+//         return console.log(error);
+//     }
+//     console.log('Message sent: ' + info.response);
+// });
