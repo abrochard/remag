@@ -5,19 +5,19 @@ module.exports = {
     assembleOptions : function (key, release_date) {
 
         var options = {
-            host: 'www.igdb.com',
+            host: 'igdbcom-internet-game-database-v1.p.mashape.com',
             path: this.pathReleasedDate(release_date),
             port: '443',
             headers: {
                 'Accept': 'application/json',
-                'Authorization': 'Token token="' + key + '"'
+                'X-Mashape-Key': key
             }
         };
         return options;
     },
 
     pathReleasedDate : function(release_date) {
-        return '/api/v1/games/search/?filters[release_date_eq]='+release_date;
+        return '/games/?fields=*&order=name:asc&filter[release_dates.date][eq]=' + release_date;
     },
 
     callback : function(response) {
@@ -32,9 +32,5 @@ module.exports = {
 
         return str;
     }
-    
+
 };
-
-
-
-
